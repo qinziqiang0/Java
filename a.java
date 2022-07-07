@@ -61,5 +61,12 @@ public class a {
         不能是关键字
         区分大小写
         */
+        //自动类型转换
+        double x = 10;
+        System.out.println(x);
+        //强制类型转换
+        z = (int)214748364748L;
+        System.out.println(z);
+        System.out.println("---------");
     }
 }
