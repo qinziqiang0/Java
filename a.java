@@ -43,17 +43,22 @@ public class a {
         
         //定义变量 变量类型有{byte,short,int,long,float,double,char,boolean}
         int a = 7;
+        
         //输出变量
         System.out.println(a);
+        
         //修改变量
         a = 12;
         System.out.println(a);
         System.out.println("---------");
+        
+        //数值类型
         long z = 214748364748L;
         float y = 3.141592654F;
         System.out.println(z);
         System.out.println(y);
         System.out.println("---------");
+        
         /*
         标识符
         由{数字,字母,下划线(_),美元符($)}组成
@@ -61,12 +66,28 @@ public class a {
         不能是关键字
         区分大小写
         */
+        
         //自动类型转换
         double x = 10;
         System.out.println(x);
+        
         //强制类型转换
         z = (int)214748364748L;
         System.out.println(z);
+        System.out.println("---------");
+        
+        //算术运算符
+        a = 6;
+        int b = 4;
+        System.out.println(a + b);
+        System.out.println(a - b);
+        System.out.println(a * b);
+        System.out.println(a / b);
+        System.out.println(a % b);
+        System.out.println("---------");
+        
+        //字符的+操作
+        System.out.println(a + 'a');
         System.out.println("---------");
     }
 }
