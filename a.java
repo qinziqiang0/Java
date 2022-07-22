@@ -89,5 +89,27 @@ public class a {
         //字符的+操作
         System.out.println(a + 'a');
         System.out.println("---------");
+        
+        //字符串的+操作
+        System.out.println("aa" + 100);
+        System.out.println(1 + 2 + 3 + "a");
+        System.out.println("---------");
+        
+        //赋值运算符
+        int i = 1;
+        System.out.println("i:" + i);
+        i += 1;//{+=,-=,*=,/=,%=}
+        System.out.println("i:" + i);
+        System.out.println("---------");
+        
+        //自增自减运算符
+        System.out.println("i:" + i);
+        i++;
+        System.out.println("i:" + i);
+        int a1 = i++;
+        System.out.println("a1:" + a1);
+        int a2 = ++i;
+        System.out.println("a2:" + a2);
+        System.out.println("---------");
     }
 }
