@@ -108,8 +108,61 @@ public class a {
         System.out.println("i:" + i);
         int a1 = i++;
         System.out.println("a1:" + a1);
-        int a2 = ++i;
+        int a2 = i--;
         System.out.println("a2:" + a2);
+        int a3 = ++i;
+        System.out.println("a3:" + a3);
+        System.out.println("---------");
+        
+        //关系运算符
+        int b1 = 10;
+        int b2 = 11;
+        int b3 = 10;
+        System.out.println(b1 == b2);
+        System.out.println(b1 == b3);
+        System.out.println("---");
+        System.out.println(b1 != b2);
+        System.out.println(b1 != b3);
+        System.out.println("---");
+        System.out.println(b1 > b2);
+        System.out.println(b1 > b3);
+        System.out.println("---");
+        System.out.println(b1 >= b2);
+        System.out.println(b1 >= b3);
+        System.out.println("---");
+        System.out.println(b1 < b2);
+        System.out.println(b1 < b3);
+        System.out.println("---");
+        System.out.println(b1 <= b2);
+        System.out.println(b1 <= b3);
+        System.out.println("---");
+        System.out.println("---------");
+        
+        //逻辑运算符
+        System.out.println((b1 > b2) & (b1 > b2));
+        System.out.println((b1 < b2) & (b1 > b2));
+        System.out.println((b1 > b2) & (b1 < b2));
+        System.out.println((b1 < b2) & (b1 < b2));
+        System.out.println("---");
+        System.out.println((b1 > b2) | (b1 > b2));
+        System.out.println((b1 < b2) | (b1 > b2));
+        System.out.println((b1 > b2) | (b1 < b2));
+        System.out.println((b1 < b2) | (b1 < b2));
+        System.out.println("---");
+        System.out.println((b1 > b2) ^ (b1 > b2));
+        System.out.println((b1 < b2) ^ (b1 > b2));
+        System.out.println((b1 > b2) ^ (b1 < b2));
+        System.out.println((b1 < b2) ^ (b1 < b2));
+        System.out.println("---");
+        System.out.println(b1 > b2);
+        System.out.println(!(b1 > b2));
+        System.out.println("---------");
+        
+        //短路逻辑运算符
+        System.out.println((b1++ > b2) && (b3++ > b2));
+        System.out.println("b1:" + b1);
+        System.out.println("b2:" + b2);
+        System.out.println("b3:" + b3);
         System.out.println("---------");
     }
 }
