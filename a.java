@@ -2,6 +2,9 @@
 一个Java项目
 */
 
+//导包
+import java.util.Scanner;
+
 //a类
 public class a {
     //main方法
@@ -164,5 +167,31 @@ public class a {
         System.out.println("b2:" + b2);
         System.out.println("b3:" + b3);
         System.out.println("---------");
+        
+        //三元运算符
+        int max = b1 > b2 ? b1 : b2;
+        System.out.println("max：" + max);
+        
+        //<两只老虎>
+        b1 = 180;
+        b2 = 200;
+        boolean c = b1 == b2 ? true : false;
+        System.out.println(c);
+        System.out.println("---------");
+        
+        //<三个和尚>
+        b1 = 150;
+        b2 = 165;
+        b3 = 210;
+        int b4 = b1 > b3 ? b1 : b2;
+        int b5 = b4 > b3 ? b4 : b3;
+        System.out.println("最高身高为：" + b5);
+        
+        //数据输入
+        //创建对象
+        Scanner o = new Scanner(System.in);
+        //接收数据
+        i = o.nextInt();
+        System.out.println("你输入的是：" + i);
     }
 }
